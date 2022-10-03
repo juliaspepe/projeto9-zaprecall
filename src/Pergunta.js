@@ -83,9 +83,9 @@ export default function Pergunta(props) {
             {classe ? 
             <PerguntaFechada>    
                 {novaClasse ? 
-                <TextoDoFlashcard data-identifier="flashcard-index-item">{texto}</TextoDoFlashcard> 
+                <TextoDoFlashcard data-identifier="flashcard-index-item flashcard-question flashcard-answer">{texto}</TextoDoFlashcard> 
                 : 
-                <PerguntaFechadaP data-identifier="flashcard-index-item" cor={classeCor} finalizado={finalizado}>{texto}</PerguntaFechadaP>}
+                <PerguntaFechadaP data-identifier="flashcard-index-item flashcard-question flashcard-answer" cor={classeCor} finalizado={finalizado}>{texto}</PerguntaFechadaP>}
                 
                 {desabilitarClick ? 
                 <img data-identifier="flashcard-show-btn" onClick={funcao} src={imagem} /> 
@@ -95,9 +95,9 @@ export default function Pergunta(props) {
                 :
             <PerguntaAberta>
                 {novaClasse ? 
-                <TextoDoFlashcard data-identifier="flashcard-index-item">{texto}</TextoDoFlashcard> 
+                <TextoDoFlashcard data-identifier="flashcard-index-item flashcard-question flashcard-answer">{texto}</TextoDoFlashcard> 
                 : 
-                <PerguntaFechadaP data-identifier="flashcard-index-item">{texto}</PerguntaFechadaP>}
+                <PerguntaFechadaP data-identifier="flashcard-index-item flashcard-question flashcard-answer">{texto}</PerguntaFechadaP>}
                 
                 {desabilitarClick ? 
                 <img data-identifier="flashcard-show-btn" onClick={funcao} src={imagem} /> 
