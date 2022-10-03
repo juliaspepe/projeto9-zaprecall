@@ -2,7 +2,8 @@ import iconeCerto from './img/icone_certo.png'
 import iconeErro from './img/icone_erro.png'
 import iconeQuase from './img/icone_quase.png'
 
-export default function Botoes({ contador, setContador }) {
+export default function Botoes(props) {
+const { contador, setContador, classe, setClasse, texto, setTexto, imagem, setImagem } = props
 
     function naoLembrei() {
         if (contador < 8) {

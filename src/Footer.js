@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Botoes from "./Botoes";
 
-export default function Footer({contador, setContador, classe, setClasse,
-    texto, setTexto, imagem, setImagem}) {
+export default function Footer(props) {
+const {contador, setContador, classe, setClasse, texto, setTexto, imagem, setImagem} = props
 
     return (
         <div className='footer-concluidos'>
