@@ -51,15 +51,46 @@
   padding: 10px;
 }
 
-.footer-concluidos > .container-botoes {
+.container-botoes {
   display: flex;
-  width: 80%;
-  justify-content: space-between;
-  margin: 20px;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .container-botoes .vermelho {
   background-color: #FF3030;
+  margin-right: 10px;
+}
+
+.vermelhoClass{
+  font-family: 'Recursive', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color:#FF3030;
+  text-decoration: line-through;
+}
+
+.amareloClass{
+  font-family: 'Recursive', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color:#FF922E;
+  text-decoration: line-through;
+}
+
+.verdeClass{
+  font-family: 'Recursive', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color:#2FBE34;
+  text-decoration: line-through;
 }
 
 .container-botoes .verde {
@@ -68,6 +99,8 @@
 
 .container-botoes .amarelo {
   background-color: #FF922E;
+  margin-right: 10px;
+
 }
 
 .container-botoes .cinza {
@@ -77,6 +110,7 @@
 .container-botoes > button {
   border: none;
   width: 90px;
+  height: 40px;
   font-family: 'Recursive', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -104,7 +138,7 @@
   justify-content: space-between;
 }
 
-.pergunta-fechada > p {
+.textoDoFlashcard {
   font-family: 'Recursive', sans-serif;
   font-style: normal;
   font-weight: 700;
